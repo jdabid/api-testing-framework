@@ -98,7 +98,7 @@ pytest -m bva -v
 
 ## 👨‍💻 Autor
 
-**Cristian David Castro**  
+**David Castro**  
 *QA Automation Engineer / SDET Junior | Estudiante de Ingeniería de Sistemas (8vo Semestre)*  
 - GitHub: [@jdabid](https://github.com/jdabid)
 - YouTube: [@capyzendev](https://www.youtube.com/@capyzendev)

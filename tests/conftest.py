@@ -14,8 +14,8 @@ def api_client() -> APIClient:
 
 @pytest.fixture
 def auth_qa_client(api_client: APIClient) -> APIClient:
-    """Provides an APIClient authenticated as a QA Engineer ('cristian_sdet')."""
-    resp = api_client.login("cristian_sdet", "SdetPass123!")
+    """Provides an APIClient authenticated as a QA Engineer ('david_sdet')."""
+    resp = api_client.login("david_sdet", "SdetPass123!")
     assert resp.status_code == 200
     return api_client
 

@@ -11,7 +11,7 @@ class TestJWTAuthentication:
 
     @pytest.mark.smoke
     def test_valid_login_returns_jwt_bearer_token(self, api_client: APIClient) -> None:
-        response = api_client.login("cristian_sdet", "SdetPass123!")
+        response = api_client.login("david_sdet", "SdetPass123!")
         assert response.status_code == 200
 
         token_data = TokenResponseSchema.model_validate(response.json())
@@ -22,10 +22,10 @@ class TestJWTAuthentication:
     @pytest.mark.parametrize(
         "username,password,expected_status,expected_code",
         [
-            ("cristian_sdet", "WrongPassword!", 401, "INVALID_CREDENTIALS"),
+            ("david_sdet", "WrongPassword!", 401, "INVALID_CREDENTIALS"),
             ("non_existent_user", "SdetPass123!", 401, "INVALID_CREDENTIALS"),
             ("", "SdetPass123!", 400, "MISSING_CREDENTIALS"),
-            ("cristian_sdet", "", 400, "MISSING_CREDENTIALS"),
+            ("david_sdet", "", 400, "MISSING_CREDENTIALS"),
         ],
     )
     def test_invalid_login_attempts_are_rejected(

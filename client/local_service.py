@@ -12,7 +12,7 @@ from requests.adapters import BaseAdapter
 VALID_CODECS = {"h264", "prores_422", "openexr", "vp9"}
 USERS_DB = {
     "admin_qa": ("AdminPass123!", "admin"),
-    "cristian_sdet": ("SdetPass123!", "qa_engineer"),
+    "david_sdet": ("SdetPass123!", "qa_engineer"),
     "guest_viewer": ("ViewerPass123!", "viewer"),
 }
 
@@ -35,7 +35,7 @@ class LocalRESTAdapter(BaseAdapter):
                 "codec": "prores_422",
                 "priority": 8,
                 "status": "queued",
-                "owner": "cristian_sdet",
+                "owner": "david_sdet",
                 "created_at": "2026-10-29T12:00:00Z",
             },
             2: {

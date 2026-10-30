@@ -54,7 +54,7 @@ class TestCRUDEndpoints:
         assert create_resp.status_code == 201
         created = TaskItemSchema.model_validate(create_resp.json())
         assert created.title == payload["title"]
-        assert created.owner == "cristian_sdet"
+        assert created.owner == "david_sdet"
 
         # Verify persistence via GET
         get_resp = auth_qa_client.get_task(created.id)

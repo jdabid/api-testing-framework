@@ -48,7 +48,7 @@ class TestSchemaContracts:
             "codec": "h264",
             "priority": 5,
             "status": "queued",
-            "owner": "cristian_sdet",
+            "owner": "david_sdet",
             "created_at": "2026-10-29T12:00:00Z",
             "leaked_internal_db_password": "secret",
         }
